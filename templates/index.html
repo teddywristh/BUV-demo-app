@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#e50914">
+
+    <meta charset="UTF-8">
+    <title>Trang Tĩnh - Flask Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h1>🌐 Flask Web Tĩnh</h1>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('dynamic_page') }}">Trang Động</a>
+    </nav>
+</header>
+<main>
+    <h2>Giới thiệu</h2>
+    <p>Đây là trang web tĩnh — nội dung được viết sẵn trong HTML, Flask chỉ render ra mà không xử lý dữ liệu.</p>
+    <ul>
+        <li>Tốc độ tải nhanh</li>
+        <li>Bảo mật cao</li>
+        <li>Phù hợp cho giới thiệu, portfolio</li>
+    </ul>
+</main>
+<footer>
+    <p>© Flask Demo 2025</p>
+</footer>
+</body>
+</html>

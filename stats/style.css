@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; }
+header { background: #e50914; color: #fff; padding: 10px 20px; }
+nav a { color: #fff; text-decoration: none; margin-right: 10px; }
+main { padding: 20px; }
+input { padding: 6px; width: 60%; }
+button { padding: 6px 12px; margin-left: 8px; cursor: pointer; }
+ul { list-style: none; padding-left: 0; }
+li { background: #fff; padding: 8px; margin: 6px 0; border-radius: 4px; }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Động - Flask Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h1>⚙️ Flask Web Động</h1>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('dynamic_page') }}">Trang Động</a>
+    </nav>
+</header>
+<main>
+    <h2>Danh sách ghi chú</h2>
+    <form id="noteForm">
+        <input id="noteInput" placeholder="Nhập ghi chú..." required />
+        <button type="submit">Thêm</button>
+    </form>
+    <ul id="notesList"></ul>
+</main>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
